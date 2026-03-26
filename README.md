@@ -50,6 +50,12 @@ java -jar build/libs/app.jar \
 --output result_top_ctr.csv
 ```
 
+example:  java -jar build/libs/app.jar \
+--file "D:\Flinter\ad_data.csv" \
+--top-ctr \
+--output top10_ctr.csv
+
+
 ## Get Top 10 CPA
 
 ```
@@ -148,7 +154,7 @@ Designed for **speed + low resource consumption** ⚡
 You can validate functionality using:
 
 * CLI execution
-* REST API requests
+* REST API requests. If you wanna test via api. You can put the file ad_data.csv into resources/static. It will run and make the csv file working as a default db.
 * Unit tests
 
 Choose whichever workflow fits your development environment best.

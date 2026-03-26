@@ -56,7 +56,8 @@ public class CampaignRepository {
         ClassPathResource resource = new ClassPathResource(resourcePath);
 
         if (!resource.exists()) {
-            throw new IOException("CSV resource not found: " + path);
+            log.error("File ad_data.com not found");
+            return "";
         }
 
         Path tmp = Files.createTempFile("ad_data", ".csv");
